@@ -1,0 +1,44 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
+Route::get('/', function () {
+    return view('index');
+});
+Route::get('/news/{slug}', function ($slug) {
+    // You can fetch the article from the database here if needed
+    return view('news-details', ['slug' => $slug]);
+});
+Route::post('/register', [UserController::class, ('register')]);
+Route::get('/AdminDashboard', function () {
+    return view('Admin.index');
+});
+Route::get('/widget', function () {
+    return view('Admin.widget');
+});
+Route::get('/homepage', function () {
+    return view('Admin.index');
+});
+Route::get('/forms', function () {
+    return view('Admin.form');
+});
+Route::get('/table',function () {
+    return view('Admin.table');
+
+});
+Route::get('/signin',function () {
+    return view ('Admin.signin');
+});
+Route::get('/signup',function () {
+    return view ('Admin.signup');
+});
+Route::get('/button', function () {
+    return view('Admin.button');
+});
+Route::get('/typography', function () {
+    return view('Admin.typography');
+});
+Route::get('/element', function () {
+    return view('Admin.element');
+});

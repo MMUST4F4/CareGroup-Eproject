@@ -83,8 +83,8 @@ http://www.tooplate.com/view/2098-health
 
                     <!-- lOGO TEXT HERE -->
                    
-                    <a href="/" class="care-logo text-decoration-none">
-                         <div class="logo-icon">
+                    <a href="/" class="care-logo text-decoration-none  ">
+                         <div class="logo-icon ">
                               <i class="fas fa-heart"></i>
                          </div>
                          <div class="logo-text">

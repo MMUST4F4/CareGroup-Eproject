@@ -10,7 +10,7 @@ Route::get('/news/{slug}', function ($slug) {
     // You can fetch the article from the database here if needed
     return view('news-details', ['slug' => $slug]);
 });
-Route::post('/register', [UserController::class, ('register')]);
+Route::post('/register', [UserController::class, 'register']);
 Route::get('/AdminDashboard', function () {
     return view('Admin.index');
 });
@@ -41,4 +41,16 @@ Route::get('/typography', function () {
 });
 Route::get('/element', function () {
     return view('Admin.element');
+});
+Route::get('/DoctorDashboard', function () {
+    return view('Doctor.index');
+});
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 });

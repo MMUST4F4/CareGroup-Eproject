@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
     
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/Admin/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -45,7 +45,7 @@
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
             <nav class="navbar bg-secondary navbar-dark">
-                <a href="index.html" class="navbar-brand mx-4 mb-3">
+                <a href="/AdminDashboard" class="navbar-brand mx-4 mb-3">
                     <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i>DarkPan</h3>
                 </a>
                 <div class="d-flex align-items-center ms-4 mb-4">
@@ -93,7 +93,7 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/Admin/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Admin/lib/chart/chart.min.js"></script>
     <script src="Admin/lib/easing/easing.min.js"></script>
     <script src="Admin/lib/waypoints/waypoints.min.js"></script>
